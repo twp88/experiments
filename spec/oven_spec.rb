@@ -17,8 +17,8 @@ describe 'Oven' do
 
   describe "Checks to see if" do
     it "bun function affects oven properties" do
-      @bun.place_in(oven)
-      expect(oven.status).to eq "Out in t'oven"
+      @bun.place_in(@oven)
+      expect(@oven.status).to eq "Out in t'oven"
     end
   end
 
