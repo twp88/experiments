@@ -6,8 +6,7 @@ describe 'Oven' do
     @bun = Bun.new
     @oven = Oven.new
   end
-  # subject(:oven) { described_class.new }
-  # subject(:bun) { described_class.new}
+
 
   describe "Checks oven init" do
     it "to see if it all initializes" do
@@ -17,7 +16,9 @@ describe 'Oven' do
 
   describe "Checks to see if" do
     it "bun function affects oven properties" do
-      @bun.place_in(@oven)
+      @bun.place_in(@oven) #<<<<<<<<<<<This is where the change needed to be made
+      #turns out that the instance variable thing came back to bite me. Note to
+      #self....ALWAYS read the error message.
       expect(@oven.status).to eq "Out in t'oven"
     end
   end
