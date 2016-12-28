@@ -13,4 +13,6 @@ class Thing
     @stuff = @bups.stuff
   end
 
+  
+
 end

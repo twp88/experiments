@@ -102,4 +102,6 @@ RSpec.configure do |config|
 =end
 require_relative '../lib/thang.rb'
 require_relative '../lib/thing.rb'
+require_relative '../lib/bun.rb'
+require_relative '../lib/oven.rb'
 end
