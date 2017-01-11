@@ -1,6 +1,6 @@
 require_relative 'spec_helper.rb'
 
-describe 'Oven' do
+describe Oven do
 
   before(:each) do
     @bun = Bun.new
@@ -10,7 +10,7 @@ describe 'Oven' do
 
   describe "Checks oven init" do
     it "to see if it all initializes" do
-      expect(@oven.status).to eq "Nout in t'oven"
+      expect(@oven.status).to eq false
     end
   end
 
@@ -19,7 +19,7 @@ describe 'Oven' do
       @bun.place_in(@oven) #<<<<<<<<<<<This is where the change needed to be made
       #turns out that the instance variable thing came back to bite me. Note to
       #self....ALWAYS read the error message.
-      expect(@oven.status).to eq "Out in t'oven"
+      expect(@oven.status).to eq true
     end
   end
 

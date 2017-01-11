@@ -7,7 +7,7 @@ class Bun
 
   def place_in(oven)
     @oven = oven
-    @oven.status = "Out in t'oven"
+    @oven.status = true
     @status = true
   end
 
